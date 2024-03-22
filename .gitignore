@@ -1,0 +1,30 @@
+# Dependency directories
+node_modules/
+
+# Environment variables file
+.env
+
+# Log files
+logs/
+*.log
+
+# OS or Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+
+# Compiled files (if using TypeScript, CoffeeScript, etc.)
+dist/
+out/
+
+# Environment-specific files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE configuration
+.idea/
+*.iml

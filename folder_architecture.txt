@@ -1,0 +1,68 @@
+registration-ms/
+│
+├── src/
+│   ├── controllers/
+│   │   ├── userController.js
+│   │   └── authController.js
+│   │
+│   ├── models/
+│   │   ├── userModel.js
+│   │   └── tokenModel.js
+│   │
+│   ├── routes/
+│   │   ├── userRoutes.js
+│   │   └── authRoutes.js
+│   │
+│   ├── services/
+│   │   ├── userService.js
+│   │   ├── authService.js
+|   |   └── jwtServicse.js
+│   │
+│   ├── middleware/
+│   │   └── validationMiddleware.js
+│   │
+│   ├── config/
+│   │   └── config.js
+│   │
+│   └── app.js
+│
+├── test/
+│   ├── unit/
+│   │   ├── userController.test.js
+│   │   ├── userService.test.js
+│   │   ├── authController.test.js
+│   │   └── authService.test.js
+│   │
+│   └── integration/
+│       ├── userRoutes.test.js
+│       └── authRoutes.test.js
+│
+├── migrations/
+│
+├── seeders/
+│
+├── scripts/
+│
+├── .env
+│
+└── package.json
+
+
+Explanation of the structure:
+
+- src/: This directory contains all the source code of the microservice.
+- controllers/: Controllers handle the HTTP requests and responses.
+- models/: Models define the data structure of the application.
+- routes/: Routes define the endpoints and link them to the corresponding controller methods.
+- services/: Services encapsulate the business logic and interact with models.
+- middleware/: Middleware functions for handling authentication, validation, logging, etc.
+- config/: Configuration files for environment-specific settings.
+- app.js: Entry point of the application where everything is initialized.
+- test/: Contains unit and integration tests for the microservice.
+- unit/: Unit tests for individual components (controllers, services, etc.).
+- integration/: Integration tests for testing the interaction between components.
+- migrations/: Database migration files for managing database schema changes.
+- seeders/: Seed data for populating the database with initial values.
+- scripts/: Custom scripts for tasks such as deployment, data migration, etc.
+- .env: Environment variables configuration file.
+- package.json: Node.js package configuration file containing dependencies and scripts.
